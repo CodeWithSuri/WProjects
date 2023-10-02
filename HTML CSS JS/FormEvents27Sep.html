@@ -1,0 +1,37 @@
+<html>
+<head>
+
+    <title>Form events</title>
+    <style>
+ /* input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+  } */
+    </style>
+   
+</head>
+
+<body>
+
+    <input type="text" id="usernameid" value="yellow" placeholder="Username" onfocus="getuserfoucsedontheinputbox(this)" onblur="userAwayFrominputbox(this)"> 
+    <br>   
+    <input type="text" id="usersurnameid" value="yellow" placeholder="User surname" onchange="userchangedinputbox(this)"> 
+<br>
+<br>
+<label>Select the course to get the links for the same course:</label>
+    <select onchange="userselectedVal(this)">
+<option>Select the course</option>
+<option>MVC</option>
+<option>JavaScript</option>
+<option>CSS</option>
+<option>HTML</option>
+
+    </select>
+   
+    <p id="courselinksid"></p>
+
+    <script src="FormEvents27Sep.js"></script>
+</body>
+
+</html>
