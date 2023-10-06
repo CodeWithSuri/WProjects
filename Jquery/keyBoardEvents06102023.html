@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<script src="Jquery371.js"></script>
+
+<script src="keyBoardEvents06102023.js"></script>
+</head>
+
+
+<body>
+
+    <pre>
+
+The order of events
+When user presses a key or combination of different keys, `keydown`, `keypress` and `keyup` are triggered in that order:
+The `keydown` event is triggered first when user presses a key
+The `keyup` event is triggered last when user releases a key
+In between, the `keypress` event is triggered
+These events serve different purposes.
+The `keydown` and `keyup` events are often used to handle the physical keys, while the `keypress` event is used to handle characters which are being typed.
+The `keypress` ignores keys such as `delete`, `arrows`, `page up`, `page down`, `home`, `end`, `ctrl`, `alt`, `shift`, `esc`, etc. So, if we need to handle those keys, it's better to use either `keydown` or `keyup` event.
+    </pre>
+
+    <h5>Read further about this topic : <a href="https://api.jquery.com/category/events/keyboard-events/"> Click here</a></h5> 
+   
+    
+    <label>Say Greeting !</label> <input type="text" id="Greetingid"><br>
+
+    <p>Hi Suri! <span style="color:green;" id="showgreetingId"></span></p>
+
+</body>
+</html>

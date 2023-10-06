@@ -1,0 +1,9 @@
+To add IntelliSense for jQuery in Visual Studio Code, you can follow the steps below:
+
+Install Node.js and npm on your system. You can download the installer from 1.
+Open a console (cmd for Windows users) and type npm. If this does not work, look at the following link: fixing npm path in Windows 8 1.
+Install the jQuery type definitions file in your project using the following command: npm install @types/jquery --save-dev.
+Add a reference to the jquery type definitions file in your JavaScript file using the following triple-slash comment: /// <reference types="jquery" />.
+After completing these steps, you should be able to use IntelliSense for jQuery in Visual Studio Code.
+
+I hope this helps! Let me know if you have any other questions.

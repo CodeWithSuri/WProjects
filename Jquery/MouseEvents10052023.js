@@ -1,25 +1,46 @@
+
+jQuery(function(){
+
+    
+$("#btnid").on("click mouseenter",function(e){
+
+if(e.type=="mouseenter"){
+    $(".hideinfo").css("color","red");
+
+}else{
+    $(".hideinfo").hide();
+
+}
+
+});
+
+});
+
 $(document).ready(function(){
 
 
 //mouse events
-$("#btnid").click(function(){
+// $("#btnid").click(function(){
 
-    //hide the things
- $(".hideinfo").hide();
+//     //hide the things
+//  $(".hideinfo").hide();
 
-//$(".hideinfo").css("color","red");
+// //$(".hideinfo").css("color","red");
 
-});
+// });
+
+//new version
 
 
-$("#slideupid").dblclick(function(){
 
-    //hide the things
- $(this).slideUp();
+// $("#slideupid").dblclick(function(){
 
-//$(".hideinfo").css("color","red");
+//     //hide the things
+//  $(this).slideUp();
 
-});
+// //$(".hideinfo").css("color","red");
+
+// });
 
 
 $("#hoverid").hover(function(){
@@ -64,8 +85,6 @@ $("#inputidmouseenter").mouseleave(function(){
     $(this).css("background","yellow");
     
     });
-    
-
 
 });
 
