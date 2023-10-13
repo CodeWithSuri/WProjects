@@ -8,8 +8,21 @@ $("#animatebtnid").on("click",function(){
         opacity: 0.4,
         marginLeft: "0.6in",
         fontSize: "3em",
-        borderWidth: "10px"
-      }, 2500 );
+        height: "300px"
+      } );
+
+
+
+});
+
+
+$("#animatebtnid2").on("click",function(){
+
+
+  $("img").animate({width: "30%"},10000)
+          .animate({height: "500px"});
+          // .animate({opacity: 0.4});
+
 
 });
 
