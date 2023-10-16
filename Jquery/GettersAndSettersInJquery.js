@@ -1,5 +1,7 @@
 jQuery(function(){
 
+$(".container").wrap("<div class='wrapclsinfo'></div>");
+
     $("#loginbtnid").on("click",function(){
 
 
@@ -50,6 +52,12 @@ $("#chckbtnid").on("click",function(){
 
     
 $("input[type='checkbox']").attr("checked","checked");
+
+  });
+
+  $("#wrapdescid").on("click",function(){
+
+    $("p").contents().wrap("<i><b></b></i>");
 
   });
 
