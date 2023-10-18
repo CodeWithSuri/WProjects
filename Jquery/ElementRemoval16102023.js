@@ -41,6 +41,30 @@ jQuery(function(){
 
     });
 
+
+    
+    $("#mainDivTechMId").on("click",function(){
+
+        $(".maindiv").unwrap();
+        $(".maindiv").wrap("<div class='techm'> </div>");
+
+    });
+
+    
+    $("#mainDivAcceId").on("click",function(){
+
+        $(".maindiv").unwrap();
+        $(".maindiv").wrap("<div class='acce'> </div>");
+
+    });
+    
+    $("#mainDivTcsId").on("click",function(){
+
+        $(".maindiv").unwrap();
+        $(".maindiv").wrap("<div class='tcs'> </div>");
+
+    });
+
     
     
 
