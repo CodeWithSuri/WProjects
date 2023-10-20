@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Reg Form</title>
+    <script src="Jquery371.js"></script>
+    <script src="RegFormUsingAjax10192023.js"></script>
+    <link rel="stylesheet" type="text/css" href="RegFormUsingAjax10192023.css">
+
+</head>
+
+<body>
+
+    
+<div id="formDiv">
+    <h3 style="text-align: center;">User Singup Form <span>With Validations</span></h3> 
+    <form id="regFormid">
+        <label>First Name <b>(blur event)</b>:</label>
+        <input type="text" id="fnameid"  autocomplete="off"> <br> <!-- maxlength="8" minlength="4" -->
+        <span class="errorMsg" id="errorFirstname">*Please provide the valid First name.</span>
+
+        <label>Last Name :</label>
+        <input type="text" id="lnameid" autocomplete="off"> <br>
+        <span class="errorMsg" id="errorLastname">*Please provide the valid Last name.</span>
+
+
+        <label>Email :</label>
+        <input type="email" id="emailid"  autocomplete="off"> <br>
+        <span class="errorMsg" id="errorEmail">*Please provide the valid Email Id.</span>
+
+        <label>Phone No:</label>
+        <input type="text" id="phnoid" maxlength="10"  autocomplete="off"> <br>
+        <span class="errorMsg" id="errorPhno">*Please provide the valid Phone Number.</span>
+
+        <label>Address :</label>
+        <textarea id="addressid" cols="10" rows="5" autocomplete="off"> </textarea><br>
+        <span class="errorMsg" id="errorAddress">*Please provide the valid Address.</span>
+
+        <label>Social Network links :</label>
+        <input type="text" id="Socialnetworklinkid" autocomplete="off"><br>
+        <span class="errorMsg" id="errorSocialNetworklink">*Please provide the valid Social Network links.</span>
+
+        <label>Gender :</label>
+        <label><input type="radio" name="gender" value="male">Male </label> <label><input type="radio" name="gender"
+                value="female">Female </label><br>
+        <span class="errorMsg" id="errorGender">*Please select the Gender .</span>
+
+        <label>Hobbies :</label>
+        <label><input type="checkbox" class="hobbies" value="Cricket"> Cricket </label> <label><input type="checkbox"
+            class="hobbies"  value="booksreading"> Reading books </label><label><input type="checkbox" class="hobbies" value="WatchingTv"> Watching
+            TV </label><br>
+        <span class="errorMsg" id="errorHobbies">*Please select at least one Hobbie</span>
+
+        <label>Select Country :</label>
+        <select id="countrydropdownid">
+            <option>Select country</option>
+        </select> <br>
+        <span class="errorMsg" id="errorCountry">*Please select country.</span>
+        <br>
+
+        <button type="submit" id="regBtnId"> Register</button>
+
+        <button type="reset" id="clrId"> Clear</button>
+
+    </form>
+
+    </div>
+    <pre>
+
+        <h1 style="color: red;">Note :</h1>
+        <p>
+There are two ways this can be handled the Cros issue :
+
+Temporary Front-End solution so you can test if your API integration is working:
+Click on start window  -> type run and hit enter -> in the command window copy:
+
+<b> chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security </b>
+
+once the chrome browser opend, copy the path location of your HTML file and past in the URL section like below :
+file:///C:/Users/suren/OneDrive/Desktop/Wprojects/WProjects/Jquery/RegFromUsingAjax10182023.html
+
+This will open a new "Chrome" window where you can work easily. This is a temporary solution. Every time you will have to work with this chrome window.
+
+Permanent solution:
+In the backend code, the developer needs to add an annotation @Crossorigin right above the CRUD api call method.
+
+Let me know if it works.
+        </p>
+
+    </pre>
+
+
+</body>
+
+</html>
