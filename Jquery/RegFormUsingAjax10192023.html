@@ -20,26 +20,36 @@
         <input type="text" id="fnameid"  autocomplete="off"> <br> <!-- maxlength="8" minlength="4" -->
         <span class="errorMsg" id="errorFirstname">*Please provide the valid First name.</span>
 
-        <label>Last Name :</label>
+        <label>Last Name <b>(keyup event)</b>:</label>
         <input type="text" id="lnameid" autocomplete="off"> <br>
         <span class="errorMsg" id="errorLastname">*Please provide the valid Last name.</span>
 
 
-        <label>Email :</label>
+        <label>Email <b>(OnChange event)</b>:</label>
         <input type="email" id="emailid"  autocomplete="off"> <br>
         <span class="errorMsg" id="errorEmail">*Please provide the valid Email Id.</span>
 
-        <label>Phone No:</label>
-        <input type="text" id="phnoid" maxlength="10"  autocomplete="off"> <br>
+        <label>Phone No <b>(KeyDown event)</b>:</label>
+        <input type="text" id="phnoid" autocomplete="off"> <br>
         <span class="errorMsg" id="errorPhno">*Please provide the valid Phone Number.</span>
 
-        <label>Address :</label>
+        <label>Address <b>(OnChange event)</b>:</label>
         <textarea id="addressid" cols="10" rows="5" autocomplete="off"> </textarea><br>
         <span class="errorMsg" id="errorAddress">*Please provide the valid Address.</span>
 
         <label>Social Network links :</label>
         <input type="text" id="Socialnetworklinkid" autocomplete="off"><br>
         <span class="errorMsg" id="errorSocialNetworklink">*Please provide the valid Social Network links.</span>
+       
+        <label>Password :</label>
+        <input type="password" id="passwordid" autocomplete="off"><br>
+        <span class="errorMsg" id="errorpassword">*Please provide the valid password.</span>
+
+        <label>Confrim Password :</label>
+        <input type="password" id="cnpasswordid" autocomplete="off"><br>
+        <span class="errorMsg" id="errorcnpassword">*Please provide the valid Confrim password.</span>
+
+
 
         <label>Gender :</label>
         <label><input type="radio" name="gender" value="male">Male </label> <label><input type="radio" name="gender"
@@ -69,6 +79,8 @@
     <pre>
 
         <h1 style="color: red;">Note :</h1>
+
+        <p>Regex validation online <a href="https://regex101.com/r/j48BZs/2"> Click here</a></p>
         <p>
 There are two ways this can be handled the Cros issue :
 
